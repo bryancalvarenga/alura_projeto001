@@ -5,7 +5,6 @@
     --cor-secundaria: #f6f6f6;
     --cor-terciaria: #22D4FD;
     --cor-hover: #272727;
-
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
 }
@@ -33,14 +32,14 @@ body {
 .header-container__menu__link {
     font-family: var(--fonte-secundaria);
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--cor-terciaria);
     text-decoration: none;
 }
 
 .container__title {
     font-family: var(--fonte-primaria);
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 
 .container__title strong {
@@ -52,18 +51,19 @@ body {
     justify-content: space-between;
     align-items: center;
     display: flex;
+    gap: 82px;
 }
 
 .container__content {
     gap: 40px;
     flex-direction: column;
     display: flex;
-    width: 615px;
+    width: 50%;
 }
 
 .container__content p{
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .container__links {
@@ -77,7 +77,7 @@ body {
 .container__links__title {
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .container__links__link {
@@ -88,11 +88,11 @@ body {
     background-color: var(--cor-primaria);
     text-decoration: none;
     color: var(--cor-secundaria);
-    width: 378px;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
     border: 2px solid var(--cor-terciaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     padding-top: 21.5px;
     padding-bottom: 21.5px;
     font-weight: 600;
@@ -102,9 +102,13 @@ body {
     background-color: var(--cor-hover);
 }
 
+.container__image {
+    width: 50%;
+}
+
 .footer-container {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
     text-align: center;
     color: var(--cor-primaria);
@@ -112,3 +116,21 @@ body {
     padding: 24px;
 }
 
+@media (max-width: 1200px) {
+    .header-container {
+        padding: 10%;
+    }
+
+    .header-container__menu{
+        justify-content: center;
+    }
+    
+    .container {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    
+    .container__content {
+        width: auto;
+    }
+}
